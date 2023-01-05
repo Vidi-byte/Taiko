@@ -23,13 +23,17 @@ forge create --legacy --rpc-url https://l2rpc.a1.taiko.xyz --private-key <YOUR_P
 ```
 #### Take the private key from your metamask that you will use for the testnet, it can be found in the section "account details" then "private key" in your metamask
 
-<div id="header" align="center">
-  <img src="https://prnt.sc/YzE8W2NS0vof" width="350"/>
-</div>
-
 ### All smart contracts are deployed, you can verify the transaction in the explorer 
 #### https://l2explorer.a1.taiko.xyz/
 ## 2. Noda
+#### Install the dock, start it and check it 
+```
+curl -f -s -S -L https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+apt update
+sudo apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y
+sudo systemctl status docker
+```
 ### Clone this repository
 ```
 git clone https://github.com/taikoxyz/simple-taiko-node.git
@@ -43,10 +47,6 @@ cp .env.sample .env
 #### ENABLE_PROPOSER to true (replacing the default false with true)
 #### L1_PROPOSER_PRIVATE_KEY to that of your wallet's private key -- it will need some balance on layer 1 to propose blocks. 
 #### L2_SUGGESTED_FEE_RECIPIENT is just the address of your metamask to which the rewards will be sent. 
-
-<div id="header" align="center">
-  <img src="https://prnt.sc/YzE8W2NS0vof" width="100"/>
-</div>
 
 ### Done after these steps, you can start the docker compose and the node is running congratulations 
 ```
