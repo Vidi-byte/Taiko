@@ -43,9 +43,11 @@ cp .env.sample .env
 #### ENABLE_PROPOSER to true (replacing the default false with true)
 #### L1_PROPOSER_PRIVATE_KEY to that of your wallet's private key -- it will need some balance on layer 1 to propose blocks. 
 #### L2_SUGGESTED_FEE_RECIPIENT is just the address of your metamask to which the rewards will be sent. 
+
 <div id="header" align="center">
   <img src="https://prnt.sc/YzE8W2NS0vof" width="100"/>
 </div>
+
 ### Done after these steps, you can start the docker compose and the node is running congratulations 
 ```
 docker compose up
