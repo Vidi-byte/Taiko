@@ -52,4 +52,8 @@ cp .env.sample .env
 ```
 docker compose up
 ```
-
+#### The official website of the project read a lot of useful is : https://taiko.xyz/docs/alpha-1-testnet/start-here
+#### Request ETH from Ethereum A1: https://l1faucet.a1.taiko.xyz/.
+#### Request ETH from Taiko A1: https://l2faucet.a1.taiko.xyz/.
+#### Deployed on L1: https://l1explorer.a1.taiko.xyz/address/0x3612E284D763f42f5E4CB72B1602b23DAEC3cA60
+#### Deployed on L2: https://l2explorer.a1.taiko.xyz/address/0x0000777700000000000000000000000000000002
